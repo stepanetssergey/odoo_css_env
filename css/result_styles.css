@@ -1,0 +1,20 @@
+.result-style-0 {margin: 40px; display: flex; justify-content: center; align-items: center; color:white; text-shadow:0 0 5px black, 0 0 10px black;}
+.result-style-1 {margin: 20px; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+.result-style-2 {margin: 20px;}
+.result-style-3 {margin: 20px; width: 40%%;}
+.result-style-4 {display: flex; justify-content: center; width: 100%;}
+.result-style-5 {width:45%; aspect-ratio: 1 / 0.6; padding:30px;}
+.result-style-6 {margin:40px; width:48%;}
+.result-style-7 {margin-bottom:40px;}
+.result-style-8 {width:70%;}
+.result-style-9 {display: flex; flex-direction: column; justify-content: center; width: 95%;}
+.result-style-10 {margin:20px;}
+.result-style-11 {width:100%; padding: 20px; aspect-ratio: 1 / 0.2;}
+.result-style-12 {margin:40px;}
+.result-style-13 {display: flex; flex-direction: column; justify-content: center; width: 100%;}
+.result-style-14 {height:600px;}
+.result-style-15 {margin-left:20px;}
+.result-style-16 {display: flex; justify-content: left; flex-wrap: wrap; width: 100%;}
+.result-style-17 {display: flex; flex-direction: column; justify-content: center; width: 48%;}
+.result-style-18 {width:100%; padding: 20px; aspect-ratio: 1 / 0.6;}
+.result-style-19 {display: flex; flex-direction: column; justify-content: center; width: 95%; margin-left:30px;}
