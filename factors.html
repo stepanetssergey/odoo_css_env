@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./css/result_styles.css">
+    <link type="text/css" rel="stylesheet" href="./css/survey_styles.css">
+    <link type="text/css" rel="stylesheet" href="./css/front-assets.css">
+</head>
+<body>
+<div id="wrap" class="survey-style-9">
+    <div>
+        <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/surveys/%s' % global_token">
+            Back to surveys </a></p>
+    </div>   
+        <form class="container" t-attf-action="/survey/factor_title/{{ factor.id }}/{{ answer_token }}">
+            <div class="survey-style-10">
+
+                <div class="survey-style-11">
+                    <div class="survey-style-12">
+                        <h3> Factor 1111</h3>
+                    </div>
+                   
+                        <div class="survey-style-14">
+                            <button type="submit" value="start" class="survey-style-15">
+                                         Comenzar
+                            </button>
+                        </div>
+                               
+                    <div class="survey-style-14">
+                        <t t-out="completion_percent[factor.id]"/> % respondido <br/>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <form class="container" t-attf-action="/survey/factor_title/{{ factor.id }}/{{ answer_token }}">
+            <div class="survey-style-10">
+
+                <div class="survey-style-11">
+                    <div class="survey-style-12">
+                        <h3> Factor 1111</h3>
+                    </div>
+                   
+                        <div class="survey-style-14">
+                            <button type="submit" value="start" class="survey-style-15">
+                                         Comenzar
+                            </button>
+                        </div>
+                               
+                    <div class="survey-style-14">
+                        <t t-out="completion_percent[factor.id]"/> % respondido <br/>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    <br/>
+    <div class="survey-style-8">
+        <div>
+            <t t-out="completion_percent['all']"/> % respondido
+        </div>
+    </div>
+    <div class="survey-style-8">
+         <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/results/%s' % (answer.access_token)">
+            Ver Resultados globales </a></p>
+
+    </div>
+    <div class="survey-style-8">
+        <p><a role="button" class="btn btn-primary btn-lg" href="google.com">
+            Solicitar informe valoración </a></p>
+    </div>
