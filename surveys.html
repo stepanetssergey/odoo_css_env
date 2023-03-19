@@ -10,51 +10,56 @@
     <link type="text/css" rel="stylesheet" href="./css/front-assets.css">
 </head>
 <body>
-    <form>
-        <div class="survey-style-4">
-            <img src="./img/factor.jpeg" class="survey-style-5"/>
-            <div class="survey-style-6">
-                <div class="survey-style-7">
-                    <h3>Title</h3>
-                </div>
-                <div class="survey-style-7">
-                    Description
-                </div>
-                <div class="survey-style-8">
-                 
-                    <div class="survey-style-14">
-                        <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/results/%s' % (answer_tokens.get(s.id) if answer_tokens.get(s.id) else 0)">
-                        Resultados </a></p>
+    <div class="container-surveys">
+        <form>
+            <div class="survey-style-4">
+                <img src="./img/factor.jpeg" class="survey-style-5"/>
+                <div class="survey-style-6">
+                    <div>
+                        <h3 class="survey-title">Title</h3>
                     </div>
+                    <p class="survey-desc">
+                        Description 
+                    </p>
+                    <div class="container-button">
+                 
+                        <div class="survey-style-14">
+                            <p><a role="button" class="btn btn-lg button button-process" t-att-href="'/survey/results/%s' % (answer_tokens.get(s.id) if answer_tokens.get(s.id) else 0)">
+                            Resultados </a></p>
+                        </div>
                     
-                    <div class="survey-style-8">
-                    23 %
+                        <div class="survey-style-8">
+                            23 %
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="survey-style-4">
-            <img src="./img/factor.jpeg" class="survey-style-5"/>
-            <div class="survey-style-6">
-                <div class="survey-style-7">
-                    <h3 style="color:red;">Title</h3>
+        </form>
+    </div>
+    <div class="section-for-print">
+        <h2 class="for-print-title">
+            Mi área de usuario
+        </h2>
+        <div class="container-score-surveys">
+            <div class="container-score-item">
+                <div class="container-score-img">
+                    <img src="./img/factor.jpeg" class="score-img"/>
+                    <span class="score-counter-field">
+                        <span class="score-counter">3</span>
+                    </span>
                 </div>
-                <div class="survey-style-7">
-                    Description
-                </div>
-                <div class="survey-style-8">
-                 
-                    <div class="survey-style-14">
-                        <p><a role="button" class="btn btn-primary btn-lg" t-att-href="'/survey/results/%s' % (answer_tokens.get(s.id) if answer_tokens.get(s.id) else 0)">
-                        Resultados </a></p>
-                    </div>
-                    
-                    <div class="survey-style-8">
-                    23 %
-                    </div>
-                </div>
+                <h3 class="score-surveys-title">Mis informes finalizados</h3>
+            </div>
+            <div class="container-score-item">
+                <img src="./img/factor.jpeg" class="score-img"/>
+                <h3 class="score-surveys-title">Mis informes finalizados</h3>
+            </div>
+            <div class="container-score-item">
+                <img src="./img/factor.jpeg" class="score-img"/>
+                <h3 class="score-surveys-title">Mis informes finalizados</h3>
             </div>
         </div>
-    </form>
+    </div>
+
 </body>
 </html>
