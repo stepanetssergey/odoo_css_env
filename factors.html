@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="./css/result_styles.css">
     <link type="text/css" rel="stylesheet" href="./css/survey_styles.css">
     <link type="text/css" rel="stylesheet" href="./css/front-assets.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head> 
 <body>
 <div id="wrap" class="">
@@ -30,7 +31,11 @@
                         </div>
                                
                         <div class="survey-style-14">
-                            <t t-out="completion_percent[factor.id]"/> <span class="survey-score">% respondido</span> <br/>
+                            <div>
+                            <canvas id="survey1" style="width:40px; height:60px;"></canvas>
+                            </div>
+
+                            <t t-out="completion_percent[factor.id]"/> <span class="survey-score">25% respondido</span> <br/>
                         </div>
                     </div>
                 </div>
@@ -145,3 +150,30 @@
             </div>
         </div>
     </div>
+    <script>
+        const ctx = document.getElementById('survey1');
+        const DATA_COUNT = 5;
+                const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+                const data = {
+                labels: [],
+                datasets: [
+                    {
+                    label: '',
+                    data: [10,10,10,10],
+                    backgroundColor: Object.values(['#9AC331', '#9AC331', '#9AC331', 'white','white']),
+                    }
+                ]
+                };
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: {
+                legend: {
+        display: false
+    }
+               
+                }});
+      </script>
+</body>
+</html>
