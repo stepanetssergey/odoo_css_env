@@ -1,0 +1,58 @@
+.bg {
+  /* background-image: url('./img/factor.jpeg'); */
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  z-index: 2;
+}
+
+.factor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+.factor-content {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.factor-title-container {
+  padding-bottom: 32px;
+}
+
+.factor-title {
+  font-size: 75px;
+  color: #fff;
+}
+
+.factor-desc-container {
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.factor-desc {
+  font-size: 32px;
+}
+
+.factor-button {
+  color: #4ECDF4 !important;
+  background: #fff;
+  font-size: 29px;
+}

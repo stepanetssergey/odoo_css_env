@@ -1,0 +1,7 @@
+survey-page-class-17 > factor-container
+survey-style-18 > factor-content
+survey-style-2 > factor-title-container
+*survey-style-2 > h2 > factor-title
+survey-style-19 > factor-desc-container
+*survey_style-19 > p > factor-desc
+button > button factor-button
