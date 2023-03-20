@@ -5,3 +5,12 @@ survey-style-2 > factor-title-container
 survey-style-19 > factor-desc-container
 *survey_style-19 > p > factor-desc
 button > button factor-button
+
+main > div > div > *determinante-container ...container o-survey-form
+ > determinante-container-fix ..o_survey_form_content w-100
+*determinante-content > wrap o_survey_start
+survey-style-o > determinante-content-fix
+survey-style-1 (h1) > determinante-title 
+survey-style-1 (div) > determinante-desc-container
+determinante-desc-container > p > determinante-desc
+button > button determinante-button
