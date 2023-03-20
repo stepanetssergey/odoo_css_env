@@ -1,0 +1,32 @@
+.container-questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-opt {
+  flex: 1;
+  border-radius: 25px !important;
+}
+
+.question-yes {
+  background: #AFE4F9;
+}
+
+.question-no {
+  background: #F77979;
+}
+
+.question-type {
+  color: #B7B7B7;
+  font-size: 15px;
+}
+
+.question-title {
+  color: #7C7C7C;
+  font-size: 23px;
+}
+
+.question-button {
+  min-width: 230px;
+  font-size: 23px;
+}

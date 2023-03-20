@@ -7,10 +7,12 @@
     <link type="text/css" rel="stylesheet" href="./css/result_styles.css">
     <link type="text/css" rel="stylesheet" href="./css/survey_styles.css">
     <link type="text/css" rel="stylesheet" href="./css/front-assets.css">
+    <link type="text/css" rel="stylesheet" href="./css/questions.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
 </head>
-<body>
+<body style="overflow:auto">
     <main>
                     
         <div class="wrap o_survey_wrap d-flex">
@@ -55,18 +57,18 @@
     
     <div class="js_question-wrapper pb-4  " id="5" data-constr-error-msg="Esta pregunta requiere una respuesta." data-validation-error-msg="La respuesta introducida no es válida.">
         <div class="mb-4">
-            <div data-oe-xpath="/data/xpath/div/div[1]" data-oe-model="survey.question.type" data-oe-id="1" data-oe-field="name" data-oe-type="char" data-oe-expression="question.question_type_bc3.name">IDD</div>
+            <div class="question-type" data-oe-xpath="/data/xpath/div/div[1]" data-oe-model="survey.question.type" data-oe-id="1" data-oe-field="name" data-oe-type="char" data-oe-expression="question.question_type_bc3.name">IDD</div>
             <h3>
-                <span class="text-break" data-oe-xpath="/data/xpath/div/h3[1]/span[1]" data-oe-model="survey.question" data-oe-id="5" data-oe-field="title" data-oe-type="char" data-oe-expression="question.title">test22</span>
+                <span class="question-title text-break" data-oe-xpath="/data/xpath/div/h3[1]/span[1]" data-oe-model="survey.question" data-oe-id="5" data-oe-field="title" data-oe-type="char" data-oe-expression="question.title">test22</span>
             </h3>
             <div data-oe-xpath="/data/xpath/div/div[3]" data-oe-model="survey.question.type" data-oe-id="1" data-oe-field="text_info" data-oe-type="text" data-oe-expression="question.question_type_bc3.text_info">teatt</div>
         </div>
     <div class="row o_survey_form_choice" data-question-type="simple_choice_radio" data-name="5">
-        <div class="col-lg-12 d-flex flex-wrap">
+        <div class="col-lg-12 d-flex flex-wrap container-questions">
 
                 
 
-                <label for="5_5" class="o_survey_choice_btn me-2 mb-2 py-1 px-3 rounded" style="background: #AFE4F9;">
+                <label for="5_5" class="question-opt question-yes o_survey_choice_btn me-2 mb-2 py-1 px-3 rounded">
                     <span class="ms-2 text-break" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/span[1]" data-oe-model="survey.question.answer" data-oe-id="5" data-oe-field="value" data-oe-type="char" data-oe-expression="label.value">Sí</span>
                     <input type="radio" data-oe-model="ir.ui.view" data-oe-id="508" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/input[1]" id="5_5" value="5" class="o_survey_form_choice_item invisible position-absolute" name="5" data-selection-key="">
                         <i class="fa fa-check-circle float-end mt-1 position-relative" data-oe-model="ir.ui.view" data-oe-id="508" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/t[3]/i[1]"></i>
@@ -75,8 +77,8 @@
 
                 
 
-                <label for="5_6" class="o_survey_choice_btn me-2 mb-2 py-1 px-3 rounded  ">
-                    <span class="ms-2 text-break" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/span[1]" data-oe-model="survey.question.answer" data-oe-id="6" data-oe-field="value" data-oe-type="char" data-oe-expression="label.value"></span>
+                <label for="5_6" class="question-opt question-no o_survey_choice_btn me-2 mb-2 py-1 px-3 rounded  ">
+                    <span class="ms-2 text-break" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/span[1]" data-oe-model="survey.question.answer" data-oe-id="6" data-oe-field="value" data-oe-type="char" data-oe-expression="label.value">No</span>
                     <span class="ms-2 text-break" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/span[1]" data-oe-model="survey.question.answer" data-oe-id="6" data-oe-field="value" data-oe-type="char" data-oe-expression="label.value"></span><input type="radio" data-oe-model="ir.ui.view" data-oe-id="508" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/input[1]" id="5_6" value="6" class="o_survey_form_choice_item invisible position-absolute " name="5" data-selection-key="">
                         <i class="fa fa-check-circle float-end mt-1 position-relative" data-oe-model="ir.ui.view" data-oe-id="508" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/t[3]/i[1]"></i>
                         <i class="fa fa-circle-thin float-end mt-1 position-relative" data-oe-model="ir.ui.view" data-oe-id="508" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/t[2]/label[1]/t[3]/i[2]"></i>
@@ -88,7 +90,7 @@
 
     
     
-    <div class="js_question-wrapper pb-4  " id="6" data-constr-error-msg="Esta pregunta requiere una respuesta." data-validation-error-msg="La respuesta introducida no es válida.">
+    <!-- <div class="js_question-wrapper pb-4  " id="6" data-constr-error-msg="Esta pregunta requiere una respuesta." data-validation-error-msg="La respuesta introducida no es válida.">
         <div class="mb-4">
             <div data-oe-xpath="/data/xpath/div/div[1]" data-oe-model="survey.question.type" data-oe-id="2" data-oe-field="name" data-oe-type="char" data-oe-expression="question.question_type_bc3.name">IDC</div>
             <h3>
@@ -119,11 +121,11 @@
         </div>
     </div>
         <div class="o_survey_question_error overflow-hidden border-0 py-0 px-3 alert alert-danger" role="alert" data-oe-model="ir.ui.view" data-oe-id="501" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[2]"></div>
-    </div>
+    </div> -->
 
     
     
-    <div class="js_question-wrapper pb-4  " id="7" data-constr-error-msg="Esta pregunta requiere una respuesta." data-validation-error-msg="La respuesta introducida no es válida.">
+    <!-- <div class="js_question-wrapper pb-4  " id="7" data-constr-error-msg="Esta pregunta requiere una respuesta." data-validation-error-msg="La respuesta introducida no es válida.">
         <div class="mb-4">
             <div data-oe-xpath="/data/xpath/div/div[1]" data-oe-model="survey.question.type" data-oe-id="2" data-oe-field="name" data-oe-type="char" data-oe-expression="question.question_type_bc3.name">IDC</div>
             <h3>
@@ -154,12 +156,12 @@
         </div>
     </div>
         <div class="o_survey_question_error overflow-hidden border-0 py-0 px-3 alert alert-danger" role="alert" data-oe-model="ir.ui.view" data-oe-id="501" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[2]"></div>
-    </div>
+    </div> -->
 
         <div class="row">
             <div class="col-12 text-center mt16">
 
-                <button type="submit" class="btn btn-primary" data-oe-model="ir.ui.view" data-oe-id="499" data-oe-field="arch" data-oe-xpath="/t[1]/t[2]/div[2]/div[1]/t[1]/button[1]" value="finish">
+                <button type="submit" class="question-button button button-results btn btn-primary" data-oe-model="ir.ui.view" data-oe-id="499" data-oe-field="arch" data-oe-xpath="/t[1]/t[2]/div[2]/div[1]/t[1]/button[1]" value="finish">
                     Enviar
                 </button>
 
