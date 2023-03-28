@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+                    
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" data-oe-model="ir.ui.view" data-oe-id="882" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/script[1]"></script>
+        <div id="wrap" class="oe_structure oe_empty" data-oe-model="ir.ui.view" data-oe-id="882" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]"></div>
+        <div class="result-style-13">
+   <div class="survey_title" style="background-image:url('./img/factor.jpeg');                                      display: flex;                                      flex-direction: column;                                      width:100%;                                      height: 100%;                                      justify-content: center;                                      align-items: center;                                      aspect-ratio: 1 / 0.6;                                      background-size: 100%;">
+        <div class="result-style-0">
+           <div class="result-style-1">
+               <div class="result-style-2">
+                   <h3>Encuestas 1</h3>
+               </div>
+               <div class="result-style-3">
+                   
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="result-style-4">
+        <div class="result-style-5">
+            <canvas data-oe-model="ir.ui.view" data-oe-id="878" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/canvas[1]" id="chart_1" style="display: block; box-sizing: border-box; height: 300px; width: 300px;" width="600" height="600"></canvas>
+           <script>
+
+           // Retrieve the canvas element
+           canvas_1 = document.getElementById('chart_1').getContext('2d');
+
+           // Define the data to be displayed in the chart
+           data = {
+           labels: ['Gobernanza Climática'] ,
+           datasets: [{
+           data: [3.0],
+           backgroundColor: ['hsla(126.0,95%, 45%, 0.6)'],
+           borderColor: ['hsla(126.0,95%, 45%, 1)'],
+           borderWidth: 1.5
+           }]
+           };
+
+           // Configure the chart
+           config = {
+           type: 'polarArea',
+           data: data,
+           options: {
+               legend: {
+                   position: 'side',
+                 },}
+           };
+
+           // Create the chart
+           const chart_1 = new Chart(canvas_1, config);
+
+           </script>
+        </div>
+        <div class="result-style-6">
+            <div class="result-style-7">
+            <h3>Encuestas 1</h3>
+            </div>
+            <div class="result-style-7">
+            <h4></h4>
+            </div>
+            <div class="result-style-8">
+               <p>  </p>
+            </div>
+        </div>
+    </div>
+   <div class="result-style-9">
+        <div class="result-style-10" data-oe-model="ir.ui.view" data-oe-id="846" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]">
+                <h4> Determinantes </h4>
+        </div>
+        <div class="result-style-11">
+            <canvas id="chart_all_determinante" width="2400" height="480" data-oe-model="ir.ui.view" data-oe-id="846" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[2]/canvas[1]" style="display: block; box-sizing: border-box; height: 240px; width: 1200px;"></canvas>
+           <script>
+
+           // Retrieve the canvas element
+           const canvas_all_determinante = document.getElementById('chart_all_determinante').getContext('2d');
+
+           // Define the data to be displayed in the chart
+           data = {
+           labels: ['Legitimidad'] ,
+           datasets: [{
+           data: [3.0],
+           maxBarThickness: 45,
+           barPercentage: 1,
+           borderRadius: 5,
+           borderSkipped: false,
+           backgroundColor: ['rgba(255, 0, 0, 0.6)'],
+           borderColor: ['rgba(255, 0, 0, 1)'],
+           borderWidth: 1.5
+           }]
+           };
+
+           // Configure the chart
+           config = {
+           type: 'bar',
+           data: data,
+           options: {
+               y: {
+                   beginAtZero: true,
+                   max:3
+                 },
+               }
+           };
+
+           // Create the chart
+           const chart_all_determinante = new Chart(canvas_all_determinante, config);
+
+           </script>
+        </div>
+    </div>
+   <div class="result-style-12" data-oe-model="ir.ui.view" data-oe-id="846" data-oe-field="arch" data-oe-xpath="/t[1]/div[2]">
+       <p>
+           Here All “determinantes of the project, each indicador has to have the color of the factor to what it belongs, this grey
+text is a text that i will tell you whre to put it in backend, for now you can put some dummy test.
+       </p>
+   </div>
+   <div class="factor_title" style="background-image:url('./img/factor.jpeg');                                      display: flex;                                      flex-direction: column;                                      width:100%;                                      height: 100%;                                      justify-content: center;                                      align-items: center;                                      aspect-ratio: 1 / 0.6;                                      background-size: 100%;">
+        <div class="result-style-0">
+           <div class="result-style-1">
+               <div class="result-style-2">
+               <h3>Gobernanza Climática</h3>
+               </div>
+               <div class="result-style-3">
+               
+               </div>
+               <div class="result-style-2">
+               
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="result-style-4">
+        <div class="result-style-5">
+            <canvas data-oe-model="ir.ui.view" data-oe-id="879" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/canvas[1]" id="chart_1"></canvas>
+           <script>
+
+           // Retrieve the canvas element
+           canvas_1 = document.getElementById('chart_1').getContext('2d');
+
+           // Define the data to be displayed in the chart
+           data = {
+           labels: ['Legitimidad'] ,
+           datasets: [{
+           data: [3.0],
+           backgroundColor: ['hsla(126.0,95%, 45%, 0.6)'],
+           borderColor: ['hsla(126.0,95%, 45%, 1)'],
+           borderWidth: 1.5
+           }]
+           };
+
+           // Configure the chart
+           config = {
+           type: 'polarArea',
+           data: data,
+           options: {}
+           };
+
+           // Create the chart
+           const chart_1 = new Chart(canvas_1, config);
+
+           </script>
+        </div>
+        <div class="result-style-6">
+            <div class="result-style-7">
+            <h3>Gobernanza Climática</h3>
+            </div>
+            <div class="result-style-7">
+            <h4>Gobernanza Climática</h4>
+            </div>
+            <div class="result-style-8">
+               <p></p>
+            </div>
+        </div>
+    </div>
+   <div class="result-style-13">
+        <div class="result-style-14">
+            <div class="result-style-10">
+                <h3>Gobernanza Climática</h3>
+            </div>
+            <div class="result-style-15" data-oe-model="ir.ui.view" data-oe-id="881" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[1]/div[2]">
+                <p>Teto about determinantes. i will tell you i what part of front end we put this, for now, for design you can put any
+dummy text. and after i have reunion with customer i will tell you where to put it.</p>
+                <p>the styles we put not the rounded red, but the form will be the same as the blue bars.
+                    but the same as in the previous chart, from 2 to 3 color is green, from 1 to 2 goes orange, from 0 to 1 red.</p>
+
+            </div>
+        </div>
+        <div class="result-style-16">
+                <div class="result-style-17">
+                <div class="result-style-10">
+                        <h4> Legitimidad </h4>
+                </div>
+                <div class="result-style-18">
+
+                    <canvas data-oe-model="ir.ui.view" data-oe-id="881" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/div[2]/t[1]/div[1]/div[2]/canvas[1]" id="chart_2" style="display: block; box-sizing: border-box; height: 150px; width: 300px;" width="600" height="300"></canvas>
+                   <script>
+
+                   // Retrieve the canvas element
+                   const canvas_2 = document.getElementById('chart_2').getContext('2d');
+
+                   // Define the data to be displayed in the chart
+                   data = {
+                   labels: ['Legitimidad regulatoria'] ,
+                   datasets: [{
+                   data: [3.0],
+                   maxBarThickness: 45,
+                   backgroundColor: ['hsla(126.0,95%, 45%, 0.6)'],
+                   borderColor: ['hsla(126.0,95%, 45%, 1)'],
+                   borderWidth: 1.5,
+                   borderRadius: 5,
+                   borderSkipped: false,
+                   }]
+                   };
+
+                   // Configure the chart
+                   config = {
+                   type: 'bar',
+                   data: data,
+                   options: {
+                       scales: {
+                         y: {
+                           beginAtZero: true,
+                           max:3
+                         },
+                           }
+                       }
+                   };
+
+                   // Create the chart
+                   const chart_2 = new Chart(canvas_2, config);
+
+                   </script>
+                </div>
+                </div>
+        </div>
+    </div>
+        </div>
+   
+           </main>
+</body>
+</html>
